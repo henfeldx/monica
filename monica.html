@@ -7,7 +7,8 @@
 <style>
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   html,body{
-    width:100%;height:100%;overflow:hidden;
+    width:100%;height:100%;
+    overflow-x:hidden;overflow-y:auto;
     font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
     -webkit-tap-highlight-color:transparent;
     -webkit-text-size-adjust:100%;
@@ -28,6 +29,7 @@
     transition:opacity .5s ease,transform .5s ease;
     transform:scale(.96);
     padding:20px;
+    overflow-y:auto;
   }
   .screen.active{opacity:1;pointer-events:auto;transform:scale(1)}
 
@@ -157,9 +159,9 @@
 <!-- ═══════ TELA INICIAL ═══════ -->
 <div class="screen active" id="screen-start">
   <div class="card">
-    <span class="emoji-deco">💌</span>
-    <h1 class="title">Oi Mônica 💕</h1>
-    <p class="subtitle">Responde rapidinho...<br>É bem rapidinho, prometo! 😊</p>
+    <span class="emoji-deco">📋</span>
+    <h1 class="title" style="color:#444">Ei Mônica!</h1>
+    <p class="subtitle">Preparei umas perguntinhas rápidas pra você.<br>Juro que é rapidinho! 😄</p>
     <button class="btn btn-start" onclick="goTo('screen-q1')">Começar</button>
   </div>
 </div>
